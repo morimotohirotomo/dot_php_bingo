@@ -15,11 +15,17 @@ td, th {
 }
 
 td {
-	background: #aa22d9;
+	background: #aaa;
 	color: #fff;
+	cursor: pointer;
+	user-select: none;
 }
 
 th {
-	color: #22aa33;
+	color: #aaa;
 	font-size: 22px;
+}
+
+.hit {
+	background: #cc1111;
 }

@@ -25,14 +25,16 @@ $nums = $bingo->create();
   	  	<th>G</th>
   	  	<th>O</th>
   	  </tr>
-  	  <?php for($i = 0; $i < 5; $i++) : ?>
+  	  <?php for($i = 0, $no = 0; $i < 5; $i++) : ?>
   	  <tr>
-  	  	<?php for($j = 0; $j < 5; $j++) : ?>
-  	  	<td><?= h($nums[$j][$i]); ?></td>
+  	  	<?php for($j = 0; $j < 5; $j++, $no++) : ?>
+  	  	<td id="nums<?php echo $no; ?>"><?= h($nums[$i][$j]); ?></td>
   	  	<?php endfor; ?>
   	  </tr>
   	  <?php endfor; ?>
   	</table>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
